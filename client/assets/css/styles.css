@@ -1,0 +1,93 @@
+body{
+    background: #efefef;
+}
+
+.navbar-brand{
+    color: #fff !important;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-form .input-group{
+    width: 70%;
+}
+
+.result-card{
+    display: flex;
+    justify-content: center;
+}
+.user-card{
+    margin: 5px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title{
+    padding-bottom: 5px;
+}
+
+.card-title a{
+    text-decoration: none;
+    color: #000;
+}
+
+.divider{
+    border-bottom: 3px solid green;
+}
+
+.info-msg{
+    display: flex;
+    justify-content: center;
+}
+
+.spinner-mask{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-success{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.user-detail-wrapper{
+    padding: 40px;
+}
+
+.user-detail-wrapper .top-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-detail-wrapper .top-card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.user-detail-wrapper .card {
+    margin: 0 5px 0 5px;
+}
+
+.user-detail-wrapper .card h4{
+    text-align: center;
+    padding: 8px;
+}
+
