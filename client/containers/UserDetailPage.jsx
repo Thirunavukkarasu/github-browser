@@ -37,11 +37,7 @@ class UserDetailPage extends Component {
     getRepositories(userId){
         if(userId){
             this.setState({ loading: true });
-            axios.get('https://api.github.com/users/'+userId+'/repos',{
-                params :{
-                    access_token : "7c5e47e46d1acc0549c0fdd807e7d03d8db6667f"
-                }
-              })
+            axios.get('https://api.github.com/users/'+userId+'/repos')
               .then((response) => {
                   LocalStorageManager.updateRepos(userId, response.data);
                  this.setState({repos : response.data, loading: false});
@@ -56,11 +52,7 @@ class UserDetailPage extends Component {
     getFollowers(userId){
         if(userId){
             this.setState({ loading: true });
-            axios.get('https://api.github.com/users/'+userId+'/followers',{
-                params :{
-                    access_token : "7c5e47e46d1acc0549c0fdd807e7d03d8db6667f"
-                }
-              })
+            axios.get('https://api.github.com/users/'+userId+'/followers')
               .then((response) => {
                 LocalStorageManager.updateFollowers(userId, response.data);
                  this.setState({followers : response.data, loading: false});
