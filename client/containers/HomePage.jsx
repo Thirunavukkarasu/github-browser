@@ -25,11 +25,7 @@ export default class HomePage extends Component {
 
         if(inputValue){
             this.setState({ loading: true });
-            axios.get('https://api.github.com/users/'+inputValue,{
-                params :{
-                    access_token : "7c5e47e46d1acc0549c0fdd807e7d03d8db6667f"
-                }
-              })
+            axios.get('https://api.github.com/users/'+inputValue)
               .then((response) => {
                 LocalStorageManager.updateUsers(response.data);
                  usersList.push(response.data);
